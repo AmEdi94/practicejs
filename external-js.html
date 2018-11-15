@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    
+<h3>Turn On & Off the Light Using External js</h3>
+<img src="assets/images/pic_bulboff.gif" id="bulb" alt="" />
+<button type="button" onclick="turnOnLight()">Turn On Light</button>
+<button type="button" onclick="turnOffLight()">Turn Off Light</button>
+
+<hr>
+
+<h3>Change the sentence</h3>
+<p id="change-sentence">This sentence is to be changed when the button is clicked.</p>
+<button type="button" onclick="changeSentence()">Click to change the sentence</button>
+
+<hr>
+
+<h3>Display Date & Time</h3>
+<p id="display-date-time">The Date & Time will be replaced when you click the button below.</p>
+<button type="button" onclick="displayDateTime()">Display Date & Time</button>
+
+<hr>
+
+<h3>Change HTML Content</h3>
+<p id="change-content">This content will be changed when you click the button below.</p>
+<button type="button" onclick="changeContent()">Click to change the content</button>
+
+<hr>
+
+<h3>Using InnerHTML</h3>
+<p>The total is <span id="using-inner-html"></span></p>
+<button type="button" onclick="usingInnerHtml()">Click the button to show the total</button>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+
+</head>
+<body>
+
+    <h3>My First JavaScript - TIY#1</h3>
+    <button type="button" onclick="document.getElementById('date-time').innerHTML = Date()">Click me to display Date & Time</button>
+    <p id="date-time"></p> 
+
+    <hr>
+
+    <h3>Change HTML Content - TIY#2</h3>
+    <p>(single quotes)</p>
+    <button type="button" onclick='document.getElementById("hello").innerHTML = "Hello JavaScript!"'>Click me to change text</button>
+    <p id="hello">Hello World!</p>
+
+    <p style="margin-top: 50px;">(double quotes)</p>
+    <button type="button" onclick="document.getElementById('hello2').innerHTML = 'Hello JavaScript2!'">Click me to change text</button>
+    <p id="hello2">Hello World2!</p>
+
+    <hr>
+
+    <h3>Change HTML Attribute Values - TIY#3</h3>
+    <button onclick="document.getElementById('bulb').src='assets/images/pic_bulbon.gif'">Turn On</button>
+    <img src="assets/images/pic_bulboff.gif" id="bulb" width="100px">
+    <button type="button" onclick="getElementById('bulb').src='assets/images/pic_bulboff.gif'">Turn Off</button>
+
+    <hr>
+
+    <h3>Change HTML Styles (CSS) - TIY#4</h3>
+    <P id="change-css">The font size will be changed.</P>
+    <button type="button" onclick="getElementById('change-css').style.fontSize = '20px';">Click to change the font size</button>
+    <button type="button" onclick="getElementById('change-css').style.fontSize = '16px';">Click to reset the font size</button>
+
+    <hr>
+
+    <h3>Hide and Show HTML elements - TIY#5</h3>
+    <p id="hide-show-content">Click the buttons to hide and show this sentence.</p>
+    <button type="button" onclick="document.getElementById('hide-show-content').style.display = 'none';">Click to hide the content</button>
+    <button type="button" onclick="document.getElementById('hide-show-content').style.display = 'block';">Click to show the content</button>
+
+
+
+</body>
+</html>

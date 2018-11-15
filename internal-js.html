@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+
+    
+    <script>
+        function jsInHeadTag() {
+            document.getElementById('js-in-head-tag').innerHTML = "The sentence is changed now.";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h3>Script Tag Test - TIY#6</h3>
+    <p id="script-tag-test"></p>
+
+    <hr>
+
+    <h3>JS in head - TIY#7</h3>
+    <p id="js-in-head-tag">This is a sentence.</p>
+    <button type="button" onclick="jsInHeadTag()">Click to change the sentence.</button>
+
+    <hr>
+
+    <h3>JS in body - TIY#8</h3>
+    <p id="js-in-body">This is another sentence.</p>
+    <button type="button" onclick="jsInBody()">Click to change this sentence.</button>
+
+
+
+    <script>
+    document.getElementById('script-tag-test').innerHTML = "This text is in the js.";
+    </script>
+
+    <script>
+    function jsInBody() {
+        document.getElementById('js-in-body').innerHTML = "The sentence is changed now.";
+    } 
+    </script>
+    
+</body>
+</html>
