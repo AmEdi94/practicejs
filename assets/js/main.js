@@ -26,3 +26,18 @@ function changeContent() {
 function usingInnerHtml() {
     document.getElementById('using-inner-html').innerHTML = 5 + 6;
 }
+
+//Using document.write()
+function usingDocumentWrite() {
+    document.write(1+6);
+}
+
+//Using window.alert()
+function usingWindowAlert() {
+    window.alert(5+10);
+}
+
+//Using console.log()
+function usingConsoleLog() {
+    console.log(0+1);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    
+        <h2>JavaScript Syntax</h2>
+
+        <h3>JavaScript Numbers</h3>
+        <h4>JS Literals (Fixed values)</h4>
+        <p>With decimals <span id="js-numbers-wd"></span></p>
+        <p>Without decimals <span id="js-numbers-wod"></span></p>
+
+        <hr>
+
+        <h3>JavaScript Variables</h3>
+        <p id="js-variables"></p>
+
+        <hr>
+
+        <h3>JavaScript Operators</h3>
+        <p id="js-operators"></p>
+
+        <hr>
+
+        <h3>JavaScript Expressions</h3>
+        <p id="js-expressions"></p>
+
+        <hr>
+
+        <h3>JavaScript Keywords</h3>
+        <p id="js-keywords"></p>
+    
+        <hr>
+
+        <h3>JavaScript is Case Sensitive</h3>
+        <p id="js-case-sensitive"></p>
+
+        <script>
+
+        //JS Syntax
+        document.getElementById('js-numbers-wd').innerHTML =
+        10.50;
+        document.getElementById('js-numbers-wod').innerHTML = 
+        1234;
+
+        var x;
+        x = 15;
+        document.getElementById('js-variables').innerHTML = x;
+
+        document.getElementById('js-operators').innerHTML = (5 + 2) * 10;
+
+        document.getElementById('js-expressions').innerHTML = "Jane" + " " + "Doe";
+
+        var a, b;
+        a = 10 + 5;
+        b = x * 2;
+        document.getElementById('js-keywords').innerHTML = b;
+
+        var lastName, lastname;
+        lastName = "Doe";
+        lastname = "Pearson";
+        document.getElementById('js-case-sensitive').innerHTML = lastName;
+
+        </script>
+
+</body>
+</html>
+
