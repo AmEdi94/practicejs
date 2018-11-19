@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    
+    <h3>The += Operator</h3>
+    <p id="plus-equal"></p>
+
+    <hr>
+
+    <h3>+ Operator</h3>
+    <p id="plus-operator"></p>
+
+    <hr>
+
+    <h3>+= Operator</h3>
+    <p id="plus-equal-operator"></p>
+
+    <hr>
+
+    <h3>Strings and Numbers</h3>
+    <p id="strings-n-numbers"></p>
+
+    <script>
+        //The += Operator
+        var x = 15;
+        x += 5;
+        document.getElementById("plus-equal").innerHTML = 
+        x;
+
+
+        //+ Operator
+        var text1 = "Jane", text2 = "Doe";
+        document.getElementById("plus-operator").innerHTML = 
+        text1 + " " + text2;
+
+        //+= Operator
+        var text3 = "What a ";
+        text3 += "lovely day!";
+        document.getElementById("plus-equal-operator").innerHTML = 
+        text3;
+
+        //Strings and Numbers
+        var a = 5 + 5,
+        b = "5" + 5;
+        c = "Hello" + 5;
+        document.getElementById("strings-n-numbers").innerHTML = 
+        a + "<br>" + b + "<br>" + c;  
+
+    </script>
+
+</body>
+</html>

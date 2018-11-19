@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+
+    <h3>The ++ Operator - Incrementing</h3>
+    <p id="plus-plus"></p>
+
+    <hr>
+
+    <h3>The -- Operator - Decrementing</h3>
+    <p id="minus-minus"></p>
+
+    <hr>
+
+    <h3>Operator Precedence</h3>
+    <p>Multiplication has precendence over substraction.</p>
+    <p id="operator-precedence"></p>
+    <br>
+    <p>The precedence can be changed using parentheses.</p>
+    <p id="changed-precedence"></p>
+
+    <script>
+        //Incrementing
+        var x = 10;
+        x++;
+        var z = x;
+        document.getElementById("plus-plus").innerHTML = 
+        z;
+
+        //Decrementing
+        var a = 10;
+        a--;
+        var b = a;
+        document.getElementById("minus-minus").innerHTML = 
+        b;
+
+        //Operator Precedence
+        var c = 10 - 2 * 12;
+        document.getElementById("operator-precedence").innerHTML = 
+        c;
+
+        //Changed Precedence
+        var d = (15 + 3) / 2;
+        document.getElementById("changed-precedence").innerHTML = 
+        d;
+
+    </script>
+</body>
+</html>

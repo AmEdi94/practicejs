@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    
+    <h3>Data Types</h3>
+
+    <h4>Numbers & Strings</h4>
+    <p id="data-types1"></p>
+
+    <hr>
+
+    <h3>Strings & Numbers</h3>
+    <p id="data-types2"></p>
+
+    <hr>
+
+    <h3>JS Types are Dynamic</h3>
+    <p id="dynamic"></p>
+
+    <hr>
+
+    <h3>Single Quotes & Double Quotes</h3>
+    <p id="single-n-double-quotes"></p>
+
+    <script>
+
+        //Numbers & Strings
+        var a = 20 + 10 + "Audi";
+        document.getElementById("data-types1").innerHTML = 
+        a;
+
+        //Strings & Numbers
+        var b = "Audi" + 10 + 20;
+        document.getElementById("data-types2").innerHTML = 
+        b;
+
+        //JS Types are Dynamic
+        var c;          // Now c is undefined
+        c = "Volvo";    // Now c is a string
+        c = 15;         // Now c is a number
+        document.getElementById("dynamic").innerHTML = 
+        c;
+
+        //Single Quotes & Double Quotes
+        var sentence1 = "This is with double quotes.",
+        sentence2 = 'This is with single quotes',
+        sentence3 = "That's a plane."
+        sentence4 = 'This is "Johnny".'
+        document.getElementById("single-n-double-quotes").innerHTML = 
+        sentence1 + "<br>" + sentence2 + "<br>" + sentence3 + "<br>" + sentence4;
+
+    </script>
+
+</body>
+</html>

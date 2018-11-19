@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    
+    <h3>JS Variables</h3>
+    <p id="js-variables"></p>
+
+    <hr>
+
+    <h3>Strings & Numbers</h3>
+    <p id="strings-n-numbers"></p>
+
+    <hr>
+
+    <h3>Declaring Variables</h3>
+    <p id="declaring-variables"></p>
+
+    <hr>
+
+    <h3>One Statement, Many Variables</h3>
+    <p id="one-statement-many-var"></p>
+
+    <br>
+
+    <p id="one-statement-many-var2"></p>
+
+    <hr>
+
+    <h3>Declaring undefined value</h3>
+    <p id="declaring-undefined-value"></p>
+
+    <hr>
+
+    <h3>Re-declaring JS Variables</h3>
+    <p id="redeclaring"></p>
+
+    <hr>
+
+    <h3>JS Arithmeic</h3>
+    <h4>JS Arithmeic - Numbers</h4>
+    <p>The total is <span id="js-arithmetic"></span></p>
+    <br>
+    <h4>JS Arithmeic - Strings</h4>
+    <p id="js-arithmetic2"></p>
+    <br>
+    <h4>JS Arithmetic - Numbers & Strings</h4>
+    <p id="js-arithmetic3"></p>
+    <br>
+    <h4>JS Arithmetic - Numbers & Strings 2</h4>
+    <p id="js-arithmetic4"></p>
+
+    <script>
+        //JS Variables
+        var price1 = 5;
+        var price2 = 2;
+        var total = price1 + price2;
+        document.getElementById('js-variables').innerHTML = 
+        "The total is " + total;
+
+        //Strings & Numbers
+        var pi = 3.14;
+        var person = "Jane Doe";
+        var answer = 'Yes I am'
+        document.getElementById("strings-n-numbers").innerHTML = 
+        pi + "<br>" + person + "<br>" + answer;
+
+        //Declaring Variables
+        var carName = "Audi";
+        document.getElementById("declaring-variables").innerHTML = 
+        carName;
+
+        //One Statement, Many Variables
+        var x = 10, person1 = "John Doe", price = 200;
+        document.getElementById("one-statement-many-var").innerHTML = 
+        x + "<br>" + person1 + "<br>" + price;
+
+        var carName2 = "Audi",
+        person2 = "Jack Doe",
+        age = 25;
+        document.getElementById("one-statement-many-var2").innerHTML = 
+        age;
+
+        //Declaring undefined Value
+        var flowerName;
+        document.getElementById("declaring-undefined-value").innerHTML = 
+        flowerName;
+
+        //Re-declaring js variables
+        var treeName = "Mango Tree";
+        var treeName;
+        document.getElementById('redeclaring').innerHTML = 
+        treeName;
+
+        //JS Arithmetic - Numbers
+        var x = 3 + 2 + 4 + 11;
+        document.getElementById("js-arithmetic").innerHTML = 
+        x;
+
+        //JS Arithmetic - Strings
+        var y = "Jane" + " " + "Doe";
+        document.getElementById("js-arithmetic2").innerHTML = 
+        y;
+    
+        //JS Arithmetic - Numbers & Strings
+        var z = "10" + 1 + 4;
+        document.getElementById("js-arithmetic3").innerHTML = 
+        z;
+
+        //JS Arithmetic - Numbers & Strings 2
+        var a = 2 + 3 + "10";
+        document.getElementById("js-arithmetic4").innerHTML = 
+        a;
+
+    </script>
+
+</body>
+</html>
