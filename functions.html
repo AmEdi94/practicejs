@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+
+    <h3>JS Functions</h3>
+
+    <p>This example calls a function which performs a calculation, and returm the result.</p>
+    <p id="new-func"></p>
+
+    <script>
+
+    function newFunc(p1, p2){
+        return p1 / p2;
+    }
+    document.getElementById("new-func").innerHTML = 
+    newFunc(5, 2);
+     
+    </script>
+
+</body>
+</html>

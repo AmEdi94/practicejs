@@ -29,6 +29,69 @@
     <h3>Single Quotes & Double Quotes</h3>
     <p id="single-n-double-quotes"></p>
 
+    <hr>
+
+    <h3>JS Booleans</h3>
+    <p id="js-booleans"></p>
+
+    <hr>
+
+    <h3>JS Arrays</h3>
+    <p id="js-arrays"></p>
+
+    <hr>
+
+    <h3>JS Objects</h3>
+    <p id="js-objects"></p>
+
+    <hr>
+
+    <h3>The typeof Operator</h3>
+    <h4>The typeof operator returns the type of a variable or an expression.</h4>
+    <p id="type-of-operator"></p>
+
+    <hr>
+
+    <h3>JS undefined - ex#1</h3>
+    <p id="undefined-1"></p>
+
+    <hr>
+
+    <h3>JS undefined - ex#2</h3>
+    <p id="undefined-2"></p>
+
+    <hr>
+
+    <h3>Empty Values</h3>
+    <p id="empty-values"></p>
+
+    <hr>
+
+    <h3>Null</h3>
+    <p id="null"></p>
+
+    <hr>
+
+    <h3>Undefined</h3>
+    <p id="undefined"></p>
+
+    <hr>
+
+    <h3>Difference Between Undefined and Null</h3>
+    <p>Undefined and null are equal in value but different in type.</p>
+    <p id="undefined-n-null"></p>
+
+    <hr>
+
+    <h3>Primitive Data</h3>
+    <p id="primitive-data"></p>
+
+    <hr>
+
+    <h3>Complex Data</h3>
+    <p id="complex-data"></p>
+
+
     <script>
 
         //Numbers & Strings
@@ -56,7 +119,95 @@
         document.getElementById("single-n-double-quotes").innerHTML = 
         sentence1 + "<br>" + sentence2 + "<br>" + sentence3 + "<br>" + sentence4;
 
-    </script>
+        //JS Booleans
+        var x = 5,
+        y = 2,
+        z = 2;
+        document.getElementById("js-booleans").innerHTML = 
+        (x == y) + "<br>" + (y == z) + "<br>" + (x != z);
+
+        //JS Arrays
+        var flowers = ["Rose", "Lotus", "Lavender"];
+        document.getElementById("js-arrays").innerHTML = 
+        flowers[0] + "<br>" + flowers[1] + "<br>" + flowers[2];
+
+        //JS Objects
+        var person = {
+            firstName : "Jane",
+            lastName  : "Doe",
+            age       : 50,
+            eyeColor  : "Green" 
+        };
+        document.getElementById("js-objects").innerHTML = 
+        person.firstName + " is " + person.age + " years old." + "<br>" + "Her eye colour is " + person.eyeColor + ".";   
+        
+        //The typeof Object
+        document.getElementById("type-of-operator").innerHTML = 
+        typeof "" + "<br>" +
+        typeof "John Doe" + "<br>" +
+        typeof 4;
+        
+        //JS undefined#1
+        var car;
+        document.getElementById("undefined-1").innerHTML = 
+        car + "<br>" + typeof car;
+
+        //JS undefined#2
+        var car1 = "Audi";
+        car1 = undefined;
+        document.getElementById("undefined-2").innerHTML = 
+        car1 + "<br>" + typeof car1;
+        
+        //Empty Values
+        var colours = "";
+        document.getElementById("empty-values").innerHTML = 
+        "The value is " + colours + "<br>" + 
+        "The type is " + typeof colours;
+ 
+        //Null
+        var person1 = {
+            firstName : "John",
+            lastName : "Doe",
+            age : 40
+        };
+        person1 = null;
+        document.getElementById("null").innerHTML = 
+        person1 + "<br>" + typeof person1;
+
+        //Undefined
+        var info = {
+            name : "Anne Marie",
+            age : 25,
+            hairColor : "Blonde"
+        };
+        info = undefined;
+        document.getElementById("undefined").innerHTML = 
+        info;
+        
+        //Difference Between Undefined and Null
+        document.getElementById("undefined-n-null").innerHTML = 
+        typeof undefined + "<br>" +
+        typeof null +"<br><br>"+
+        (null === undefined) + "<br>" +
+        (null == undefined);
+        
+        //Primitive Data
+        document.getElementById("primitive-data").innerHTML = 
+        typeof "John" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof true + "<br>" +
+        typeof false + "<br>" +
+        typeof x1;
+
+        //Complex Data
+        document.getElementById("complex-data").innerHTML = 
+        typeof {name1 : "Eric", age : 30} + "<br>" +
+        typeof ["audi", "bmw", "benz"] + "<br>" +
+        typeof null + "<br>" +
+        typeof function newFun(){};
+
+
+        </script>
 
 </body>
 </html>
