@@ -25,6 +25,16 @@
     <h3>Fahrenheit to Celsius</h3>
     <p id="to-celsius"></p>
 
+    <hr>
+
+    <h3>F to C with Text</h3>
+    <p id="f-to-c"></p>
+
+    <hr>
+
+    <h3>Local Variables</h3>
+    <p id="local-variables"></p>
+    <p id="local-variables-2"></p>
     
     <script>
 
@@ -52,9 +62,29 @@
     //Fahrenheit to Celsius
     function toCelsius(f) {
         return (5/9) * (f-32);
-    }
+   
     document.getElementById("to-celsius").innerHTML = 
-    toCelsius;
+    toCelsius(77);}
+
+    //F to C with text
+    document.getElementById("f-to-c").innerHTML = 
+    "The temperature is " + toCelsius1(77);
+
+    function toCelsius1 (fahrenheit) {
+        return (5/9) * (fahrenheit - 32);
+    } 
+
+    //Local Variables
+    localVariables();
+
+    function localVariables() {
+        var localVar = "This is the local variable";
+        document.getElementById("local-variables").innerHTML = 
+        typeof localVar + " " + localVar;
+    }
+
+    document.getElementById("local-variables-2").innerHTML = 
+    typeof localVar;
         
     </script>
 
