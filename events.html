@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <h3>JS Events</h3>
+
+    <h4>JS code changes the content of the element with id="js-event-1"</h4>
+    <button type="button" onclick="document.getElementById('js-event-1').innerHTML = Date()">Check the time here.</button>
+    <p id="js-event-1"></p>
+
+    <h4>The code changes the content of its own element (using this.innerHTML)</h4>
+    <button type="button" onclick="this.innerHTML = Date()">Check the time.</button>
+
+    <h4>JS code is often several lines long. It is more common to see event attributes calling functions.</h4>
+    <button onclick="displayDate()">Check the time.</button>
+    <p id="display-date"></p>
+
+    <script>
+    function displayDate() {
+        document.getElementById("display-date").innerHTML = 
+        Date();
+        
+    }
+    </script>
+ 
+
+</body>
+</html>

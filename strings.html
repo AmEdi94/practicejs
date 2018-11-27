@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <h3>String Length</h3>
+    <p id="string-length"></p>
+
+    <hr>
+
+    <h3>Special characters</h3>
+    <p id="double-quotes"></p>
+    <p id="single-quotes"></p>
+    <p id="backslash"></p>
+
+    <hr>
+
+    <h3>Breaking Long Code Line</h3>
+    <p id="breaking-code-line"></p>
+    <p id="breaking-code-line-2"></p>
+
+    <hr>
+
+    <h3>Strings can be objects</h3>
+    <p id="demo1"></p>
+
+    <hr>
+
+    <h3>Never create strings as objects</h3>
+    <h4>Strings and objects cannot be safely compared.</h4>
+    <p id="demo2"></p>
+
+    <hr>
+
+    <h4>When using the = = = operator, equal strings are not equal, because the = = = operator expects equality in both type and value</h4>
+    <p id="demo3"></p>
+
+    <hr>
+
+    <h4>Objects cannot be compared</h4>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+
+    <script>
+        //String Length
+        var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("string-length").innerHTML = 
+        "This is the text " + text + "<br>" + "It has " + text.length + " characters.";
+
+        //Special Characters
+        //Double Quotes
+        var x = "We are the so called \"Vikings\" from the North.";
+        document.getElementById("double-quotes").innerHTML = 
+        x;
+
+        //Single Quotes
+        var y = 'She\'s my friend.'
+        document.getElementById("single-quotes").innerHTML = 
+        y;
+
+        //Backslash in a string
+        var z = "This character is \\ is called backslash";
+        document.getElementById("backslash").innerHTML = 
+        z;
+
+        //Breaking Long Code Line
+        document.getElementById("breaking-code-line").innerHTML = "Hello \
+        Dolly!";
+
+        document.getElementById("breaking-code-line-2").innerHTML = "Hello " +
+        "Dolly!";
+
+        //Strings can be objects
+        var a = "Butterfly";
+        var b = new String("Butterfly");
+
+        document.getElementById("demo1").innerHTML = 
+        a + " > " + typeof a + "<br>" + b + " > " + typeof b;
+
+        document.getElementById("demo2").innerHTML = 
+        (a==b);
+
+        document.getElementById("demo3").innerHTML = 
+        (a===b);
+
+        //Objects cannot be compared
+        var c = new String("John");
+        var d = new String("John");
+
+        document.getElementById("demo4").innerHTML = 
+        "c = = d " + (c==d);
+
+        document.getElementById("demo5").innerHTML = 
+        "c = = = d " + (c===d);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    
+    <h3>JS Objects</h3>
+    <p id="js-objects-1"></p>
+
+    <hr>
+
+    <h3>Object Definition</h3>
+    <p id="object-definition"></p>
+
+    <hr>
+
+    <h3>Two ways to access an object property - #1</h3>
+    <p id="access-op-1"></p>
+
+    <hr>
+
+    <h3>Two ways to access an object property - #2</h3>
+    <p id="access-op-2"></p>
+
+    <hr>
+
+    <h3>Object Methods</h3>
+    <p id="object-methods"></p>
+    <p id="without-parentheses"></p>
+
+
+
+    <script>
+
+        //JS Objects
+        //Create an object
+        var car = {type:"Audi", model:500, color:"Black"};
+        
+        //Display some data from the object
+        document.getElementById("js-objects-1").innerHTML = 
+        "The car type is " + car.type;
+
+        //Object Definition
+
+        //Create an object
+        var person = {
+            firstName:"Jane", 
+            lastName:"Doe", 
+            age:25, 
+            eyeColor:"Green"
+            };
+
+        //Display some data from the object
+        document.getElementById("object-definition").innerHTML = 
+        person.firstName + " " + person.lastName + " is " + person.age + " years old and her eye colour is " + person.eyeColor + ".";
+            
+        //Access Object Property
+        var flower = {
+            name: "Roses",
+            color: "Red",
+            occasion: "Valentine's Day"
+        };
+
+        document.getElementById("access-op-1").innerHTML = 
+        flower.color + " " + flower.name + " are popular on " + flower.occasion + ".";
+
+        document.getElementById("access-op-2").innerHTML = 
+        flower["name"] + " are " + flower["color"] + ".";
+
+        //Object Methods
+        var person2 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 001,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("object-methods").innerHTML = 
+        person2.fullName();
+
+        //Without parentheses
+        document.getElementById("without-parentheses").innerHTML = 
+        person2.fullName;
+
+
+    </script>
+
+</body>
+</html>
